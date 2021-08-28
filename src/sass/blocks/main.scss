@@ -1,0 +1,16 @@
+body {
+    max-width: 1152px;
+    height: 2011px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
+.container {
+    max-width: 866px;
+    margin: 0 auto;
+    &_header {
+        max-width: 1044px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-end;
+    }
+}

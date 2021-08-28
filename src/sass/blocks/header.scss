@@ -1,0 +1,30 @@
+header {
+    height: 210px;
+}
+.nav_menu {
+    width: 237px;
+    height: 57px;
+    margin-right: 10px;
+    .nav_list {
+        list-style: none;
+        padding: 0;
+        margin-top: 29px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &_item {
+            font-family: "Heebo";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            color: $darkcolor;
+            a {
+                text-decoration: none;
+                color: $darkcolor;
+                &:active {
+                    @include active_list_item;
+                }
+            }
+        }
+    }
+}
