@@ -1,0 +1,32 @@
+.footer {
+    &_icons {
+        width: 232px;
+        height: 30px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-bottom: 26px;
+        margin-top: 51px;
+        &_fb {
+    
+        }
+        &_insta {
+        
+        }
+        &_twitter {
+        
+        }
+        &_linkedin {
+        
+        }
+    }
+    &_copyright {
+        font-family: Heebo;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        text-align: center;
+        color: $darkcolor;
+        margin-bottom: 54px;
+    }
+}
