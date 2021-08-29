@@ -65,6 +65,10 @@
             font-size: 20px;
             line-height: 29px;
             color: #FFFFFF;
+            cursor: pointer;
+            &:active {
+                @include active_button;
+            }
         }
     }
 }

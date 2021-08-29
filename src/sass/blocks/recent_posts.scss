@@ -1,0 +1,93 @@
+.posts {
+    height: 396px;
+    background-color: $secondcolor;
+    &_header {
+        height: 69px;
+        display: flex;
+        justify-content: space-between;
+        .title {
+            font-family: Heebo;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 22px;
+            color: $darkcolor;
+            margin-top: 19px;
+            margin-bottom: 16px;
+        }
+        .link {
+            font-family: Heebo;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            margin-top: 25px;
+            margin-bottom: 16px;
+            a {
+                text-decoration: none;
+                color: #00A8CC;
+                ;
+            }
+        }
+    }
+    &_content {
+        width: 866px;
+        height: 295px;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 0;
+    }
+    &_item {
+        width: 418px;
+        height: 295px;
+        background-color: $basecolor;
+        border-radius: 4px;
+        &_content {
+            margin: 24px 21px 35px 23px;
+        }
+        &_title {
+            width: 374px;
+            height: 66px;
+            font-family: Heebo;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 26px;
+            color: $darkcolor;
+            margin-bottom: 35px;
+        }
+        &_properties {
+            width: 374px;
+            height: 24px;
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 21px;
+            .properties_date{
+                width: 130px;
+                height: 21px;
+                font-family: Heebo;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                color: $darkcolor;
+                border-right-style: groove;
+            }
+            .properties_tags {
+                height: 21px;
+                font-family: Heebo;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                color: $darkcolor;
+                margin-left: 25px;
+            }
+        }
+        &_descr {
+            width: 368px;
+            height: 89px;
+            font-family: Heebo;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 23px;
+            color: $darkcolor;
+        }
+    }
+}

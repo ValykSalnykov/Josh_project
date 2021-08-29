@@ -1,3 +1,11 @@
 @mixin active_list_item {
     color: $buttoncolor;
 }
+@mixin active_button {
+    transition: .1s;
+    transition-timing-function: ease;
+    border-radius: 20px;
+    border-style: solid;
+    border: 10px;
+    background-color: #b84848;
+}
