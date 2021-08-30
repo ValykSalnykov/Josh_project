@@ -28,11 +28,6 @@
 <body>
 <header class="header">
   <div class="container_header">
-    <div class="burger_menu menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
     <nav class="nav_menu">
       <ul class="nav_list">
         <li class="nav_list_item"><a href="#">Works</a></li>
@@ -40,6 +35,11 @@
         <li class="nav_list_item"><a href="#">Contact</a></li>
       </ul>
     </nav>
+    <div class="burger_menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </div>
 
 </header>
@@ -76,7 +76,7 @@
     <div class="posts_content">
       <div class="posts_item">
         <div class="posts_item_content">
-          <div class="posts_item_title">Making a design system from scratch</div>
+          <div class="posts_item_title"><a href="#">Making a design system from scratch</a></div>
           <div class="posts_item_properties properties">
             <div class="properties_date">12 Feb 2020</div>
             <div class="properties_tags">Design, Pattern</div>
@@ -86,7 +86,7 @@
       </div>
       <div class="posts_item">
         <div class="posts_item_content">
-          <div class="posts_item_title">Creating pixel perfect icons in Figma</div>
+          <div class="posts_item_title"> <a href="#">Creating pixel perfect icons in Figma</a></div>
           <div class="posts_item_properties properties">
             <div class="properties_date">12 Feb 2020</div>
             <div class="properties_tags">Figma, Icon Design</div>
@@ -107,7 +107,7 @@
       <div class="works_item">
         <img class="works_item_photo" src="/img/photo_works_1.svg" alt="work_photo">
         <div class="works_item_content">
-          <div class="works_item_title">Designing Dashboards</div>
+          <div class="works_item_title"> <a href="#">Designing Dashboards</a></div>
           <div class="works_item_properties">
             <div class="properties_date">2020</div>
             <div class="properties_tags">Dashboard</div>
@@ -118,7 +118,7 @@
       <div class="works_item">
         <img class="works_item_photo" src="/img/photo_works_2.svg" alt="work_photo">
         <div class="works_item_content">
-          <div class="works_item_title">Vibrant Portraits of 2020</div>
+          <div class="works_item_title"> <a href="#">Vibrant Portraits of 2020</a></div>
           <div class="works_item_properties">
             <div class="properties_date">2018</div>
             <div class="properties_tags">Illustration</div>
@@ -129,7 +129,7 @@
       <div class="works_item">
         <img class="works_item_photo" src="/img/photo_works_3.svg" alt="work_photo">
         <div class="works_item_content">
-          <div class="works_item_title">36 Days of Malayalam type</div>
+          <div class="works_item_title"> <a href="#">36 Days of Malayalam type</a></div>
           <div class="works_item_properties">
             <div class="properties_date">2018</div>
             <div class="properties_tags">Typography</div>
@@ -144,13 +144,16 @@
 <footer class="footer">
   <div class="container">
     <div class="footer_icons">
-      <img class="footer_icons_fb" src="/img/icons/fb.svg" alt="icons_fb">
-      <img class="footer_icons_insta" src="/img/icons/insta.svg" alt="icons_insta">
-      <img class="footer_icons_twitter" src="/img/icons/twitter.svg" alt="icons_twitter">
-      <img class="footer_icons_linkedin" src="/img/icons/linkedin.svg" alt="icons_linkedin">
+      <a href="#"><img class="footer_icons_fb" src="/img/icons/fb.svg" alt="icons_fb"></a>
+      <a href="#"><img class="footer_icons_insta" src="/img/icons/insta.svg" alt="icons_insta"></a>
+      <a href="#"><img class="footer_icons_twitter" src="/img/icons/twitter.svg" alt="icons_twitter"></a>
+      <a href="#"><img class="footer_icons_linkedin" src="/img/icons/linkedin.svg" alt="icons_linkedin"></a>
     </div>
     <div class="footer_copyright">Copyright ©2020 All rights reserved </div>
   </div>
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="/js/menu.js"></script> 
 </body>
 </html>

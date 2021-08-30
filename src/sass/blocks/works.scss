@@ -3,12 +3,9 @@
     &_header {
         height: 77px;
         .title {
-            font-family: Heebo;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 22px;
-            line-height: 60px;
-            color: $darkcolor;
+            @include section_title;
+            padding-top: 23px;
+            padding-bottom: 23px;
         }
     }
     &_content {
@@ -31,11 +28,7 @@
             height: 182px;
         }
         &_title {
-            font-family: Heebo;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 30px;
-            color: $darkcolor;
+            @include works_item_title;
             margin-bottom: 27px;
         }
         &_properties {
@@ -66,11 +59,7 @@
         &_descr {
             width: 561px;
             height: 68px;
-            font-family: Heebo;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
-            color: $darkcolor;
+            @include item_descr_propert;
         }
     }
 }

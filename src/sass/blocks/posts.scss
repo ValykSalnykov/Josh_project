@@ -6,11 +6,7 @@
         display: flex;
         justify-content: space-between;
         .title {
-            font-family: Heebo;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 22px;
-            color: $darkcolor;
+            @include section_title;
             margin-top: 19px;
             margin-bottom: 16px;
         }
@@ -46,11 +42,7 @@
         &_title {
             width: 374px;
             height: 66px;
-            font-family: Heebo;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 26px;
-            color: $darkcolor;
+            @include posts_item_title;
             margin-bottom: 35px;
         }
         &_properties {
@@ -62,32 +54,19 @@
             .properties_date{
                 width: 130px;
                 height: 21px;
-                font-family: Heebo;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 18px;
-                color: $darkcolor;
+                @include item_descr_propert;
                 border-right-style: groove;
             }
             .properties_tags {
                 height: 21px;
-                font-family: Heebo;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 18px;
-                color: $darkcolor;
+                @include item_descr_propert;
                 margin-left: 25px;
             }
         }
         &_descr {
             width: 368px;
             height: 89px;
-            font-family: Heebo;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 23px;
-            color: $darkcolor;
+            @include item_descr_propert;
         }
     }
 }

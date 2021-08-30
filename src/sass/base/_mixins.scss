@@ -1,11 +1,43 @@
 @mixin active_list_item {
     color: $buttoncolor;
 }
+
 @mixin active_button {
-    transition: .1s;
-    transition-timing-function: ease;
-    border-radius: 20px;
-    border-style: solid;
-    border: 10px;
-    background-color: #b84848;
+    background-color:$darkcolor;
+    -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #161829;
+    -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #161829;
+    box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #161829;
+}
+
+@mixin section_title {
+    font-family: "Heebo", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color: $darkcolor;
+}
+
+@mixin posts_item_title {
+    font-family: "Heebo", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    color: $darkcolor;
+}
+
+@mixin works_item_title {
+    font-family: "Heebo", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    color: $darkcolor;
+}
+
+@mixin item_descr_propert {
+    font-family: "Heebo", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: $darkcolor;
 }

@@ -1,76 +1,63 @@
 @media screen and (max-width: 375px) {
-    .greeting {
-        height: 385px;
-        &_content {
-            width: 855px;
-            height: 261px;
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 6px;
-            margin: 0 auto;
-            &_text {
-                width: 517px;
-                height: 211px;
-            }
-            &_title {
-                font-family: "Heebo";
-                font-style: normal;
-                font-weight: bold;
-                font-size: 44px;
-                line-height: 60px;
-                color: $darkcolor;
-                text-align: left;
-                margin: 0;
-                margin-bottom: 25px;
-            }
-            &_desc {
-                font-family: "Heebo";
-                font-style: normal;
-                font-weight: normal;
-                font-size: 16px;
-                line-height: 23px;
-                color: $darkcolor;
-                text-align: left;
-            }
-            &_avatar {
-                width: 243px;
-                height: 243px;
-                position: relative;
-                .avatar_photo {
-                    width: 243px;
-                    height: 243px
-                }
-                .avatar_block {
-                    width: 243px;
-                    height: 243px;
-                    background-color: $secondcolor;
-                    border-radius: 50%;
-                    position: absolute;
-                    top: 18px;
-                    z-index: -1;
-                }
-            }
+    .container_header {
+        max-width: 375px;
+        height: 50px;
+    }
+    header {
+        max-width: 375px;
+        height: 50px;
+    }
+    .nav_menu {
+        display: none;
+        width: 350px;
+        height: 50px;
+        position: absolute;
+        right: -100%;
+        transition: all 1s ease;
+    .nav_list {
+        margin: 11px 10px 0 0;
+        padding: 0px 15px 0px 15px;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-radius: 20px 20px 20px 20px;
+        -webkit-box-shadow: 0px 0px 3px 3px rgba(34, 60, 80, 0.09);
+        -moz-box-shadow: 0px 0px 3px 3px rgba(34, 60, 80, 0.09);
+        box-shadow: 0px 0px 3px 3px rgba(34, 60, 80, 0.09);
+        &_item {
+            font-family: "Heebo";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            color: $darkcolor;
         }
-        &_resume_button {
-            height: 50px;
-            margin-left: 2px;
-            .button {
-                width: 208px;
-                height: 47px;
-                background: #FF6464;
-                border-radius: 2px;
-                border-style: none;
-                font-family: Heebo, sans-serif;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 20px;
-                line-height: 29px;
-                color: #FFFFFF;
-                cursor: pointer;
-                &:active {
-                    @include active_button;
-                }
-            }
+    }
+    }
+    .burger_menu {
+        width: 30px;
+        height: 18px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        cursor: pointer;
+        margin: 16px 20px 0 0;
+        span {
+            width: 30px;
+            border: 1.4px solid $darkcolor;
+            background-color: $darkcolor;
         }
+    }
+    .burger_menu.open-menu {
+        display: none;
+        span {
+            opacity:0; 
+            transition: 0.2s; 
+        }
+    }
+    .nav_menu.open-menu {
+        display: block;
+        right: 0%;
     }
 }

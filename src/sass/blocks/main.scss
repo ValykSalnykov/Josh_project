@@ -4,6 +4,7 @@ body {
     margin: 0 auto;
     background-color: #FFFFFF;
 }
+
 .container {
     max-width: 866px;
     margin: 0 auto;
@@ -12,5 +13,13 @@ body {
         margin: 0 auto;
         display: flex;
         justify-content: flex-end;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $darkcolor;
+    &:active {
+        @include active_list_item;
     }
 }
