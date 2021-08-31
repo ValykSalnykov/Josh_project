@@ -14,14 +14,13 @@
         height: 50px;
     }
     .nav_menu {
-        display: none;
-        width: 350px;
+        visibility: hidden;
+        width: 375px;
         height: 50px;
-        position: absolute;
-        right: -100%;
-        transition: all 1s ease;
+        opacity: 0;
+        transition: transform 0.5s 0.1s linear;
     .nav_list {
-        margin: 11px 10px 0 0;
+        margin: 12px 0 0 0;
         padding: 0px 15px 0px 15px;
         list-style: none;
         display: flex;
@@ -41,6 +40,7 @@
     }
     }
     .burger_menu {
+        display: block;
         width: 30px;
         height: 18px;
         display: flex;
@@ -49,22 +49,24 @@
         justify-content: space-between;
         cursor: pointer;
         margin: 16px 20px 0 0;
+        transition: transform 0.5s 0.1s linear;
         span {
             width: 30px;
-            border: 1.4px solid $darkcolor;
+            border: 1.6px solid $darkcolor;
             background-color: $darkcolor;
         }
     }
     .burger_menu.open-menu {
-        display: none;
+        display: block;
         span {
             opacity:0; 
-            transition: 0.2s; 
+            transition: transform 0.5s 0.1s linear; 
         }
     }
     .nav_menu.open-menu {
-        display: block;
-        right: 0%;
+        visibility: visible;
+        opacity: 1;
+        transition: transform 0.5s 0.1s linear;
     }
     //greetings section
     .greeting {
