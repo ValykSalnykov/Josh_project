@@ -1,11 +1,12 @@
 @media screen and (max-width: 375px) {
-    // main
+    //main
     .container_header {
         max-width: 375px;
         height: 50px;
     }
     .container {
         max-width: 375px;
+        height: auto;
     }
     //header section
     header {
@@ -218,6 +219,104 @@
                 height: 120px;
                 @include item_descr_propert;
             }
+        }
+    }
+    //works section
+    .works {
+        height: 1500px;
+        &_header {
+            height: 65px;
+            display: block;
+            margin: 0 auto;
+            .title {
+                text-align: center;
+                margin: 0 auto;
+                @include section_title;
+                font-size: 18px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+        }
+        &_content {
+            height: 1355px;
+            margin: 0 auto;
+        }
+        &_item {
+            width: 347px;
+            height: 451px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-bottom: 1px solid #E0E0E0;
+            padding-top: 21px;
+            padding-bottom: 5px;
+            margin: 0 auto;
+            &_photo {
+                width: 341px;
+                height: 227px;
+                margin: 0 auto;
+            }
+            &_content {
+                width: 347px;
+                height: 190px;
+            }
+            &_title {
+                @include works_item_title;
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+            &_properties {
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 23px;
+                .properties_date {
+                    width: 62px;
+                    height: 24px;
+                    font-family: Heebo;
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 18px;
+                    color: #FFFFFF;
+                    background-color: $darkcolor;
+                    border-radius: 16px;
+                    text-align: center;
+                    margin-right: 26px;
+                }
+                .properties_tags {
+                    font-family: Heebo;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 20px;
+                    color: #8695A4;
+                }
+            }
+            &_descr {
+                width: 347px;
+                height: 96px;
+                @include item_descr_propert;
+            }
+        }
+    }
+    //footer
+    .footer {
+        width: 375px;
+        height: 132px;
+        margin: 51px auto 34px auto;
+        &_icons {
+            width: 232px;
+            height: 30px;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+        &_copyright {
+            font-family: Heebo;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            text-align: center;
+            color: $darkcolor;
+            margin-top: 26px;
         }
     }
 }
