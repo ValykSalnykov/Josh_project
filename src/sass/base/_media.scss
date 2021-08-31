@@ -1,8 +1,13 @@
 @media screen and (max-width: 375px) {
+    // main
     .container_header {
         max-width: 375px;
         height: 50px;
     }
+    .container {
+        max-width: 375px;
+    }
+    //header section
     header {
         max-width: 375px;
         height: 50px;
@@ -40,7 +45,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         cursor: pointer;
         margin: 16px 20px 0 0;
         span {
@@ -59,5 +64,160 @@
     .nav_menu.open-menu {
         display: block;
         right: 0%;
+    }
+    //greetings section
+    .greeting {
+        height: 616px;
+        &_content {
+            width: 375px;
+            height: 442px;
+            display: flex;
+            flex-direction: column-reverse;
+            margin: 0 auto;
+            margin-top: 33px;
+            &_text {
+                width: 354px;
+                height: 219px;
+                margin: 0 auto;
+            }
+            &_title {
+                font-family: "Heebo";
+                font-style: normal;
+                font-weight: bold;
+                font-size: 32px;
+                line-height: 40px;
+                color: $darkcolor;
+                text-align: center;
+                margin: 0 auto;
+                margin-bottom: 46px;
+            }
+            &_desc {
+                font-family: Heebo;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 23px;
+                text-align: center;
+                color: #21243D;
+                margin: 0 auto;
+            }
+            &_avatar {
+                width: 174px;
+                height: 174px;
+                margin: 0px auto 43px auto;
+                position: relative;
+                .avatar_photo {
+                    width: 174px;
+                    height: 174px
+                }
+                .avatar_block {
+                    width: 174px;
+                    height: 174px;
+                    background-color: $secondcolor;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 18px;
+                    z-index: -1;
+                }
+            }
+        }
+        &_resume_button {
+            height: 50px;
+            margin: 52px 0 42px 0;
+            .button {
+                width: 208px;
+                height: 47px;
+                display: block;
+                background: #FF6464;
+                border-radius: 2px;
+                border-style: none;
+                font-family: Heebo, sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 29px;
+                color: #FFFFFF;
+                cursor: pointer;
+                margin: 0 auto;
+                &:active {
+                    @include active_button;
+                }
+            }
+        }
+    }
+    //posts section
+    .posts {
+        height: 647px;
+        background-color: $secondcolor;
+        &_header {
+            height: 60px;
+            width: 105px;
+            display: block;
+            margin: 0 auto;
+            .title {
+                font-family: Heebo;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 60px;
+                margin: 19px auto 16px auto;
+            }
+            .link {
+                display: none;
+            }
+        }
+        &_content {
+            width: 354px;
+            height: 549px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+        &_item {
+            width: 354px;
+            height: 266px;
+            background-color: $basecolor;
+            border-radius: 4px;
+            &_content {
+                margin: 12px 21px 22px 19px;
+            }
+            &_title {
+                width: 317px;
+                height: 60px;
+                font-family: Heebo;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 22px;
+                color: #21243D;
+                margin-bottom: 12px;
+            }
+            &_properties {
+                width: 317px;
+                height: 24px;
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 19px;
+                .properties_date{
+                    width: 113px;
+                    height: 24px;
+                    @include item_descr_propert;
+                    line-height: 24px;
+                    border-right-style: groove;
+                }
+                .properties_tags {
+                    width: 143px;
+                    height: 24px;
+                    @include item_descr_propert;
+                    line-height: 24px;
+                    margin-left: 25px;
+                }
+            }
+            &_descr {
+                width: 317px;
+                height: 120px;
+                @include item_descr_propert;
+            }
+        }
     }
 }
