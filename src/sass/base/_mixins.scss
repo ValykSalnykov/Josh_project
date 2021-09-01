@@ -41,3 +41,8 @@
     line-height: 21px;
     color: $darkcolor;
 }
+@mixin transition_for_media {
+    body, header, footer, nav, section, ul, li, div, h1, p, a, img, span , button {
+        transition: all 270ms ease-in-out;
+    }
+}
