@@ -1,9 +1,9 @@
 @import "base/_variables";
 @import "base/_mixins";
 @import "blocks/main.scss";
-@import "blocks/header.scss";
-@import "blocks/greetings.scss";
-@import "blocks/posts.scss";
-@import "blocks/works.scss";
-@import "blocks/footer.scss";
+@import "blocks/Home/header.scss";
+@import "blocks/Home/greetings.scss";
+@import "blocks/Home/posts.scss";
+@import "blocks/Home/works.scss";
+@import "blocks/Home/footer.scss";
 @import "base/_media";
